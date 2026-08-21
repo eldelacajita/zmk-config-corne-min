@@ -93,6 +93,11 @@
             key-positions = <35 34>;
             layers = <2>;
         };
+
+        combo_layer_reset {
+            bindings = <&to 0>;
+            key-positions = <10 11>;
+        };
     };
 
     macros {
