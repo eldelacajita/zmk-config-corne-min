@@ -140,12 +140,6 @@
         compatible = "zmk,keymap";
 
         BAS {
-            // -----------------------------------------------------------------------------------------
-            // |  ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  `   |
-            // | CAPW |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  Ñ  |  ´   |
-            // |  TAB |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  -  |  MIC |
-            //                    | MO1 | DEL | ENT |   | BAC | SPAC | MO4 |
-
             bindings = <
 &lt 0 ESC   &kp ES_Q        &kp ES_W        &kp ES_E          &kp ES_R         &kp ES_T        &kp ES_Y       &kp ES_U         &kp ES_I          &kp ES_O             &kp ES_P              &kp ES_GRAVE
 &caps_word  &bhm LGUI ES_A  &bhm LALT ES_S  &bhm LSHIFT ES_D  &bhm LCTRL ES_F  &kp ES_G        &kp ES_H       &bhm RCTRL ES_J  &bhm RSHIFT ES_K  &bhm RIGHT_ALT ES_L  &bhm RGUI ES_N_TILDE  &kp ES_ACUTE
@@ -155,12 +149,6 @@
         };
 
         MED {
-            // -----------------------------------------------------------------------------------------
-            // |  TRAN  |  PREV  |  STOP  |  P/P   |  NEXT  |  TRAN  |   |  TRAN  |  TRAN  |  TRAN  |  TRAN  |  TRAN  |  TRAN  |
-            // |  TRAN  |  VOL↓  |  MUTE  |  MUTE  |  VOL↑  |  TRAN  |   |  TRAN  |  RCTRL |  RSHFT |  LALT  |  RGUI  |  TRAN  |
-            // |  TRAN  |  REC   |  CLIP  |  EMO   |  PRSC  |  TRAN  |   |  BT0   |  BT1   |  BT2   |  BT3   |  BT4   |  BTCR  |
-            //                            |  TRAN  |  TRAN  |  TRAN  |   |  TRAN  |  TRAN  |  TRAN  |
-
             bindings = <
 &trans  &kp C_PREV             &kp C_STOP     &kp C_PLAY_PAUSE  &kp C_NEXT       &sys_reset     &sys_reset    &trans             &trans           &trans        &trans          &trans
 &trans  &kp C_VOLUME_DOWN      &kp C_MUTE     &kp C_MUTE        &kp C_VOLUME_UP  &bootloader    &bootloader   &kp RIGHT_CONTROL  &kp RIGHT_SHIFT  &kp LEFT_ALT  &kp RIGHT_META  &trans
@@ -170,12 +158,6 @@
         };
 
         NUM {
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-            // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-            // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-            //                    | GUI |     | SPC |   | ENT |     | ALT |
-
             bindings = <
 &kp ES_EQUAL  &kp ES_LEFT_PARENTHESIS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp ES_RIGHT_PARENTHESIS    &kp ES_PERCENT  &kp ES_AT             &kp ES_INVERTED_EXCLAMATION  &kp ES_EXCLAMATION    &kp ES_TILDE      &kp ES_NOT
 &kp ES_SLASH  &kp ES_N0                &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ES_ASTERISK             &kp ES_SLASH    &kp ES_HASH           &kp ES_LEFT_BRACKET          &kp ES_RIGHT_BRACKET  &kp ES_AMPERSAND  &kp ES_MIDDOT
